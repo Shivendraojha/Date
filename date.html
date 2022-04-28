@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0vh;
+            padding: 0vh;
+        }
+
+        body {
+            background-color: rgb(112, 68, 68);
+
+        }
+
+        .container {
+
+            justify-content: center;
+            align-items: center;
+            margin-left: 10vh;
+            margin-top: 20vh;
+            background-color: rgb(131, 17, 17);
+            width: 60vw;
+            height: 17vh;
+            display: inline-block;
+            /* border-radius: 50%; */
+        }
+
+        #date {
+            color: white;
+            display: inline-block;
+            text-align: center;
+            margin-top: 4vh;
+            margin-left: 2vh;
+            padding-bottom: 9vh;
+            font-size: 4vh;
+
+        }
+
+        .para {
+            font-size: 30px;
+            color: rgb(196, 175, 175);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p id="date"></p>
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p class="para">
+        We kill time. We save time. We rob and get robbed of time, we lose time, and we have all the time in the
+        world.<br>
+        But no<br>
+        one of us is powerful enough to stop the march of time or slow it down.<br><br>
+
+        Is it something far beyond our control? In fact, no. While we cannot influence the flow of time, we still can
+        get the
+        most out of it. Becoming a wise time manager sometimes is similar to mastering a sorcery, but the results are
+        worth the
+        effort.<br>
+    </p>
+</body>
+<script>
+    function time() {
+
+
+
+        document.getElementById('date').innerHTML = Date();
+    }
+    setInterval(time, 1000);
+
+
+</script>
+
+</html>
